@@ -93,12 +93,16 @@
 		echo "Criando arquivos padroẽs: index.php, index.html, style.css ..."
 		echo "Criando o arquivo php padrão ..."
                 touch /var/www/html/sites/$NOMEDOPROJETO/php/index.php
+		echo "Alterando as permissões dos arquivos..."
+		chmod 775 /var/www/html/sites/$NOMEDOPROJETO/php/index.php
 		echo "Criando o arquivo html padrão ..."
 		touch /var/www/html/sites/$NOMEDOPROJETO/html/index.html
+		echo "Alterando as permissões dos arquivos..."
+		chmod 775 /var/www/html/sites/$NOMEDOPROJETO/html/index.html
 		echo "Criando o arquivo css padrão ..."
-		touch /var/www/html/sites/$NOMEDOPROJETO/css/style.css
-		
-
+		touch /var/www/html/sites/$NOMEDOPROJETO/css/style.css		
+		echo "Alterando as permissões dos arquivos..."
+		chmod 775 /var/www/html/sites/$NOMEDOPROJETO/css/style.css
 	
  esac
  fi
